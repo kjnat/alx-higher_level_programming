@@ -2,5 +2,5 @@
 
 
 def no_c(my_string):
-    copy_str = [x for x in my_string if x != 'c' or x != 'C']
-    return ("".join(copy_str))
+    copy_str = (my_string.remove('c') or my_string.remove('C'))
+    return (copy_str)
